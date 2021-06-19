@@ -1,0 +1,118 @@
+
+<html>
+<head>
+    <title>Covid care- Cases, vaccines, top news</title>
+    <link rel="stylesheet" 
+   type = "text/css"
+   href = "style.css"
+    </head>
+<body>
+<div class = "header">
+    <div class = "menu1">
+    <a target="_blank"href = "https://www.google.com/search?q=coronavirus&rlz=1C1CHBD_enIN948IN948&oq=coro&aqs=chrome.3.69i57j0i433l4j0i433i457j0i402j69i61.3114j0j7&sourceid=chrome&ie=UTF-8#wptab=s:H4sIAAAAAAAAAONgVuLVT9c3NMwySk6OL8zJecTozS3w8sc9YSmnSWtOXmO04eIKzsgvd80rySypFNLjYoOyVLgEpVB1ajBI8XOhCvHsYmLzSSxJLS5ZxMrtnF-Un5dYlllUWgwAOiVTd3YAAAA">Top news</a><br>
+<a target="_blank"href = "precaution.html">Precautions</a><br>
+<a target="_blank"href = "symptoms.html">Symptoms</a>
+    </div>
+    
+    
+<h1><b>Covid care</b></h1>
+<div class = "menu">
+<a target="_blank"href = "https://www.google.com/search?q=covid+testing+near+me&rlz=1C1CHBD_enIN948IN948&oq=covid+testing&aqs=chrome.0.0i433i457j69i57j0i402l2j0i433j0l5.4208j0j7&sourceid=chrome&ie=UTF-8&dlnr=1&sei=pDjGYI-LPKKhmge0krOQDQ">Testing</a><br>
+<a target="_blank"href = "treatment.html">Treatment</a><br>
+<a target="_blank"href = "https://www.google.com/search?q=covid+vaccines&rlz=1C1CHBD_enIN948IN948&oq=covid+vaccines&aqs=chrome..69i57j0i131i433l2j0i433l2j0i433i457j0i402l2j0j0i433.5056j0j7&sourceid=chrome&ie=UTF-8">Vaccines</a>
+    </div></div> 
+    
+    <div class = "page">
+    <div class = "registration">
+        
+        <p><b>Get registered for vaccine.</b></p>
+            
+        <p><i>Click <a target = "_blank"href = "https://www.cowin.gov.in/">here</a> to sign up.<hr></i></p>
+    </div>
+    <div class="cases">
+    <p>Click <a target = "_blank"href = "https://www.covid19india.org/">here</a> to see cases and deaths in India.</p>
+        <p>Click <a target = "_blank"href = "https://www.worldometers.info/coronavirus/">here</a> to see cases and deaths worldwide.</p>
+        <button onclick = "myfunction()">Click here to check if you are having covid-19.</button>
+        <p id = "demo"></p>
+        <span>
+              <iframe width="500" height="393" src="https://www.youtube.com/embed/5DGwOJXSxqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="hi" width="500" height="393" src="https://www.youtube.com/embed/kZnJ-oPuYE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </span>
+        <script>
+myfunction(){
+        var fever, cough, bodyache, msg;
+        var fever = prompt("Are you feversish?", "yes");
+        var cough = prompt("Do you have a cough?", "yes");
+        var bodyache = prompt("Are you having a bodyache?", "yes");
+        if(fever == "yes"){
+        if(cough == "yes"){
+        if(bodyache == "yes"){
+        msg="You need to call a doctor (100) or the cops (101) ASAP.";
+            document.getElementById("demo").innerHTML=msg;
+        }
+            else if(bodypain == "no"){
+            msg="If you feel pukish or get a bodyache, please contact a docotr, in the meantime, please stay home.";
+            document.getElementById("demo").innerHTML=msg;
+            }
+            msg="I couldn't really catch that.";
+            document.getElementById("demo").innerHTML=msg;
+        }
+        }
+       
+        else if(cough == "no"){
+            if(bodyache == "yes"){
+                msg="Maybe the bodyache is just due to the fever, nevertheless stay home stay safe.";
+            document.getElementById("demo").innerHTML=msg;
+}  
+            else if(bodyache == "no"){
+              msg="Don't worry, it's just cough.";
+            document.getElementById("demo").innerHTML=msg;
+            }
+            else{
+msg="I couldn't really catch that.";
+            document.getElementById("demo").innerHTML=msg;
+            }
+        }
+         else if(fever == "no"){
+           if(cough == "yes"){
+               if(bodyache == "yes"){
+                  msg="Rest well. If there is no improvement in health contact a doctor.";
+            document.getElementById("demo").innerHTML=msg; 
+               }
+               else if(bodyache == "no"){
+                msg="If you feel pukish, get a bodyache or are feverish, contact a doctor. In the mean time, please stay home.";
+            document.getElementById("demo").innerHTML=msg;
+               }
+               else{
+                   msg="I couldn't really catch that.";
+            document.getElementById("demo").innerHTML=msg;
+               }           
+           }
+             
+             else if(cough == "no"){
+                 if(bodyache == "yes"){
+                       msg="Maybe the bodyache is due to exersion, nevertheless stay home stay safe.";
+            document.getElementById("demo").innerHTML=msg;
+                 }
+                 else if(bodyache == "no"){
+                       msg="You are perfectly fine..";
+            document.getElementById("demo").innerHTML=msg;
+                 }
+                 else{
+  msg="I couldn't really catch that.";
+            document.getElementById("demo").innerHTML=msg;
+                 }
+             }
+        } 
+        else{
+              msg="I couldn't really catch that..";
+            document.getElementById("demo").innerHTML=msg;
+        }
+    }
+        
+         
+    </script>
+    </div>
+    </div>
+    </body>
+</html>
